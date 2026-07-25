@@ -1136,7 +1136,7 @@ img {
     }
 
     .search-container {
-        display: none;
+        display: block;
     }
 
     .main-navigation {

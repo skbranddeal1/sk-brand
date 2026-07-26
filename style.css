@@ -1123,7 +1123,7 @@ img {
 @media (max-width: 700px) {
 
     .header-container {
-        min-height: 75px;
+        min-height: 130px;
     }
 
     .brand-name span {
@@ -1137,6 +1137,9 @@ img {
 
     .search-container {
         display: block;
+        width: 100%;
+        max-width: 330px;
+        margin: 15px auto 0:;
     }
 
     .main-navigation {

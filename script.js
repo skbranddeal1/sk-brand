@@ -1,419 +1,57 @@
-/* =====================================================
-   SK BRAND - COMPLETE JAVASCRIPT
-   Works with the existing index.html and style.css
-===================================================== */
+// ================================
+// SK BRAND - SCRIPT.JS
+// ================================
 
+// Dark Mode
 
-/* =====================================================
-   MOBILE MENU
-===================================================== */
+const darkBtn = document.getElementById("darkMode");
 
-const mobileMenuButton = document.getElementById("mobileMenuButton");
+darkBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+});
 
-const mainNavigation = document.getElementById("mainNavigation");
+// Search Box
+const searchInput = document.querySelector(".search-box input");
 
+searchInput.addEventListener("keyup", function () {
 
-if (mobileMenuButton && mainNavigation) {
+    let filter = this.value.toLowerCase();
 
-    mobileMenuButton.addEventListener("click", function () {
+    let cards = document.querySelectorAll(".product-card");
 
-        mainNavigation.classList.toggle("active");
+    cards.forEach(card => {
 
-        const icon = mobileMenuButton.querySelector("i");
+        card.classList.remove("highlight");
 
-        if (mainNavigation.classList.contains("active")) {
+        if (filter !== "" && card.innerText.toLowerCase().includes(filter)) {
 
-            icon.classList.remove("fa-bars");
+            card.classList.add("highlight");
 
-            icon.classList.add("fa-xmark");
-
-        } else {
-
-            icon.classList.remove("fa-xmark");
-
-            icon.classList.add("fa-bars");
-
-        }
-
-    });
-
-}
-
-
-/* =====================================================
-   CLOSE MOBILE MENU AFTER CLICKING A LINK
-===================================================== */
-
-const navLinks = document.querySelectorAll(".nav-link");
-
-
-navLinks.forEach(function (link) {
-
-    link.addEventListener("click", function () {
-
-        if (mainNavigation) {
-
-            mainNavigation.classList.remove("active");
-
-        }
-
-        if (mobileMenuButton) {
-
-            const icon = mobileMenuButton.querySelector("i");
-
-            icon.classList.remove("fa-xmark");
-
-            icon.classList.add("fa-bars");
+            card.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
 
         }
 
     });
 
 });
+// Smooth Scroll
 
+document.querySelectorAll("a").forEach(link => {
 
-/* =====================================================
-   PRODUCT SEARCH
-===================================================== */
+    link.addEventListener("click", function(e) {
 
-const searchForm = document.getElementById("searchForm");
+        let href = this.getAttribute("href");
 
-const searchInput = document.getElementById("searchInput");
+        if (href.startsWith("#")) {
 
-const productCards = document.querySelectorAll(".product-card");
+            e.preventDefault();
 
-const noProductsMessage =
-    document.getElementById("noProductsMessage");
+            document.querySelector(href).scrollIntoView({
 
-
-if (searchInput) {
-
-    searchInput.addEventListener("input", function () {
-
-        const searchText =
-            searchInput.value.toLowerCase().trim();
-
-        let foundProducts = 0;
-
-
-        productCards.forEach(function (product) {
-
-            const productName =
-                product.getAttribute("data-product-name")
-                .toLowerCase();
-
-            const productCategory =
-                product.getAttribute("data-category")
-                .toLowerCase();
-
-            const productContent =
-                product.textContent.toLowerCase();
-
-
-            if (
-
-                productName.includes(searchText) ||
-
-                productCategory.includes(searchText) ||
-
-                productContent.includes(searchText)
-
-            ) {
-
-                product.style.display = "block";
-
-                foundProducts++;
-
-            } else {
-
-                product.style.display = "none";
-
-            }
-
-        });
-
-
-        if (foundProducts === 0 && searchText !== "") {
-
-            noProductsMessage.style.display = "block";
-
-        } else {
-
-            noProductsMessage.style.display = "none";
-
-        }
-
-    });
-
-}
-
-
-/* =====================================================
-   SEARCH FORM
-===================================================== */
-
-if (searchForm) {
-
-    searchForm.addEventListener("submit", function (event) {
-
-        event.preventDefault();
-
-        const searchText =
-            searchInput.value.trim();
-
-
-        if (searchText !== "") {
-
-            document
-                .getElementById("products")
-                .scrollIntoView({
-                    behavior: "smooth"
-                });
-
-        }
-
-    });
-
-}
-
-
-/* =====================================================
-   PRODUCT CATEGORY FILTER
-===================================================== */
-
-const filterButtons =
-    document.querySelectorAll(".filter-button");
-
-
-filterButtons.forEach(function (button) {
-
-    button.addEventListener("click", function () {
-
-
-        filterButtons.forEach(function (btn) {
-
-            btn.classList.remove("active");
-
-        });
-
-
-        button.classList.add("active");
-
-
-        const selectedCategory =
-            button.getAttribute("data-filter");
-
-
-        let foundProducts = 0;
-
-
-        productCards.forEach(function (product) {
-
-            const productCategory =
-                product.getAttribute("data-category");
-
-
-            if (
-
-                selectedCategory === "all" ||
-
-                productCategory === selectedCategory
-
-            ) {
-
-                product.style.display = "block";
-
-                foundProducts++;
-
-            } else {
-
-                product.style.display = "none";
-
-            }
-
-        });
-
-
-        if (foundProducts === 0) {
-
-            noProductsMessage.style.display = "block";
-
-        } else {
-
-            noProductsMessage.style.display = "none";
-
-        }
-
-
-        if (searchInput) {
-
-            searchInput.value = "";
-
-        }
-
-    });
-
-});
-
-
-/* =====================================================
-   CATEGORY CARDS
-===================================================== */
-
-const categoryCards =
-    document.querySelectorAll(".category-card");
-
-
-categoryCards.forEach(function (categoryCard) {
-
-    categoryCard.addEventListener("click", function () {
-
-
-        const selectedCategory =
-            categoryCard.getAttribute("data-category");
-
-
-        filterButtons.forEach(function (button) {
-
-            button.classList.remove("active");
-
-
-            if (
-
-                button.getAttribute("data-filter")
-                === selectedCategory
-
-            ) {
-
-                button.classList.add("active");
-
-            }
-
-        });
-
-
-        productCards.forEach(function (product) {
-
-            const productCategory =
-                product.getAttribute("data-category");
-
-
-            if (productCategory === selectedCategory) {
-
-                product.style.display = "block";
-
-            } else {
-
-                product.style.display = "none";
-
-            }
-
-        });
-
-    });
-
-});
-
-
-/* =====================================================
-   CLEAR SEARCH WHEN CLICKING PRODUCTS
-===================================================== */
-
-const productsLink =
-    document.querySelector('a[href="#products"]');
-
-
-if (productsLink) {
-
-    productsLink.addEventListener("click", function () {
-
-        if (searchInput) {
-
-            searchInput.value = "";
-
-        }
-
-        productCards.forEach(function (product) {
-
-            product.style.display = "block";
-
-        });
-
-
-        filterButtons.forEach(function (button) {
-
-            button.classList.remove("active");
-
-        });
-
-
-        const allButton =
-            document.querySelector(
-                '.filter-button[data-filter="all"]'
-            );
-
-
-        if (allButton) {
-
-            allButton.classList.add("active");
-
-        }
-
-    });
-
-}
-
-
-/* =====================================================
-   ACTIVE NAVIGATION LINK
-===================================================== */
-
-window.addEventListener("scroll", function () {
-
-    const sections =
-        document.querySelectorAll("section[id]");
-
-
-    const scrollPosition =
-        window.scrollY + 150;
-
-
-    sections.forEach(function (section) {
-
-        const sectionTop =
-            section.offsetTop;
-
-        const sectionHeight =
-            section.offsetHeight;
-
-        const sectionId =
-            section.getAttribute("id");
-
-
-        if (
-
-            scrollPosition >= sectionTop &&
-
-            scrollPosition < sectionTop + sectionHeight
-
-        ) {
-
-            navLinks.forEach(function (link) {
-
-                link.classList.remove("active");
-
-
-                const activeLink =
-                    document.querySelector(
-                        '.nav-link[href="#' + sectionId + '"]'
-                    );
-
-
-                if (activeLink) {
-
-                    activeLink.classList.add("active");
-
-                }
+                behavior: "smooth"
 
             });
 
@@ -423,9 +61,4 @@ window.addEventListener("scroll", function () {
 
 });
 
-
-/* =====================================================
-   PAGE LOADED
-===================================================== */
-
-console.log("SK BRAND Website JavaScript Loaded Successfully!");
+console.log("SK Brand Website Loaded Successfully");

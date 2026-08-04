@@ -1,2253 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <!-- ================= BASIC INFORMATION ================= -->
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-        content="SK Brand - Discover quality mobile phones, mobile covers, earbuds, headphones, Bluetooth speakers, power banks and smart watches.">
-
-    <meta name="keywords"
-        content="SK Brand, mobile phones, mobile covers, earbuds, headphones, Bluetooth speakers, power banks, smart watches">
-
-    <meta name="author" content="SK Brand">
-
-    <title>SK Brand | Quality Products & Best Deals</title>
-
-
-    <!-- ================= ICON LIBRARY ================= -->
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-
-    <!-- ================= CSS FILE ================= -->
+    <title>SK Brand</title>
 
     <link rel="stylesheet" href="style.css">
 
-</head>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
 
 <body>
 
+<!-- HEADER START -->
 
-    <!-- =====================================================
-                         HEADER / NAVBAR
-    ====================================================== -->
+<header>
 
-    <header class="site-header">
+<div class="logo">
 
-        <div class="container header-container">
+<img src="images/logo.jpg" alt="SK Brand Logo">
 
+<h1>SK Brand</h1>
 
-            <!-- BRAND NAME -->
+</div>
 
-            <a href="#home" class="brand-name">
+<nav>
 
-                <span>SK</span>
+<ul>
 
-                <strong>BRAND</strong>
+<li><a href="index.html">Home</a></li>
 
-            </a>
+<li><a href="#shop">Shop</a></li>
 
+<li><a href="#categories">Categories</a></li>
 
-            <!-- SEARCH BAR -->
+<li><a href="#deals">Deals</a></li>
 
-            <div class="search-container">
+<li><a href="about.html">About</a></li>
 
-                <form class="search-form" id="searchForm">
+<li><a href="contact.html">Contact</a></li>
 
-                    <input
-                        type="search"
-                        id="searchInput"
-                        placeholder="Search products..."
-                        aria-label="Search products">
+</ul>
 
-                    <button type="submit" aria-label="Search">
+</nav>
 
-                        <i class="fa-solid fa-magnifying-glass"></i>
+<div class="search-box">
 
-                    </button>
+<input type="text" placeholder="Search Products...">
 
-                </form>
+<button>
 
-            </div>
+<i class="fa-solid fa-magnifying-glass"></i>
 
+</button>
 
-            <!-- NAVIGATION -->
+</div>
 
-            <nav class="main-navigation" id="mainNavigation">
+<button id="darkMode">
 
-                <a href="#home" class="nav-link active">
-                    Home
-                </a>
+<i class="fa-solid fa-moon"></i>
 
-                <a href="#about" class="nav-link">
-                    About Us
-                </a>
+</button>
 
-                <a href="#theme" class="nav-link">
-                    Theme
-                </a>
+</header>
 
-                <a href="#products" class="nav-link">
-                    Products
-                </a>
-
-                <a href="#privacy" class="nav-link">
-                    Privacy Policy
-                </a>
-
-                <a href="#contact" class="nav-link">
-                    Contact
-                </a>
-
-            </nav>
+<!-- HEADER END -->
 
 
-            <!-- MOBILE MENU BUTTON -->
+<!-- HERO SECTION -->
 
-            <button
-                class="mobile-menu-button"
-                id="mobileMenuButton"
-                aria-label="Open Menu">
+<section class="hero">
 
-                <i class="fa-solid fa-bars"></i>
+<div class="hero-text">
 
-            </button>
+<h2>
+    Welcome To <br>
+    <span>SK Brand</span>
+    </h2>
 
+<p>
+
+Best Smart Watches, Earbuds, Headphones,
+
+Power Banks, Chargers,
+
+Keyboards, Mouse,
+
+Bluetooth Speakers
+
+and Mobile Covers.
+
+</p>
+
+<a href="#" class="shop-btn">
+
+Shop Now
+
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="images/hero.jpg" alt="SK Brand hero">
+
+</div>
+
+</section>
+<!-- ===========================
+     PRODUCT CATEGORIES
+============================ -->
+<section class="categories"
+id="categories">
+
+<h2>Shop By Categories</h2>
+
+<div class="category-container">
+
+<a href="products/smart-watch.html" class="card">
+<h3>⌚ Smart Watches</h3>
+</a>
+
+<a href="products/earbuds.html" class="card">
+<h3>🎧 Earbuds</h3>
+</a>
+
+<a href="products/headphones.html" class="card">
+<h3>🎧 Headphones</h3>
+</a>
+
+<a href="products/mobile-covers.html" class="card">
+<h3>📱 Mobile Covers</h3>
+</a>
+
+<a href="products/power-banks.html" class="card">
+<h3>🔋 Power Banks</h3>
+</a>
+
+<a href="products/chargers.html" class="card">
+<h3>🔌 Chargers</h3>
+</a>
+
+<a href="products/mouse.html" class="card">
+<h3>🖱️ Mouse</h3>
+</a>
+
+<a href="products/keyboards.html" class="card">
+<h3>⌨️ Keyboards</h3>
+</a>
+
+<a href="products/bluetooth-speakers.html" class="card">
+<h3>🔊 Bluetooth Speakers</h3>
+</a>
+
+</div>
+
+</section>
+
+<!-- WhatsApp Button -->
+
+<a href="https://wa.me/923105276184" class="whatsapp" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+<!-- ===========================
+     FEATURED PRODUCTS
+=========================== -->
+
+<section class="featured-products"id="Shop">
+
+    <h2>Featured Products</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="images/no-image.png" alt="Smart Watch">
+            <h3>Smart Watches</h3>
+            <p>Premium Collection</p>
+            <a href="products/smart-watch.html" class="buy-btn">Explore</a>
         </div>
 
-    </header>
-
-
-    <!-- =====================================================
-                           MAIN CONTENT
-    ====================================================== -->
-
-    <main>
-
-
-        <!-- =================================================
-                              HOME SECTION
-        ================================================== -->
-
-        <section class="home-section" id="home">
-
-            <div class="container home-container">
-
-
-                <!-- HOME CONTENT -->
-
-                <div class="home-content">
-
-
-                    <span class="home-label">
-
-                        WELCOME TO SK BRAND
-
-                    </span>
-
-
-                    <h1>
-
-                        Discover Quality Products
-
-                        <span>
-
-                            & Best Deals
-
-                        </span>
-
-                    </h1>
-
-
-                    <p>
-
-                        Explore a wide range of quality products including
-                        mobile phones, mobile covers, earbuds, headphones,
-                        Bluetooth speakers, power banks and smart watches.
-
-                    </p>
-
-
-                    <!-- HOME BUTTONS -->
-
-                    <div class="home-buttons">
-
-                        <a href="#products" class="primary-button">
-
-                            Explore Products
-
-                            <i class="fa-solid fa-arrow-right"></i>
-
-                        </a>
-
-
-                        <a href="#about" class="secondary-button">
-
-                            Learn More
-
-                        </a>
-
-                    </div>
-
-
-                    <!-- HOME STATS -->
-
-                    <div class="home-statistics">
-
-
-                        <div class="stat-item">
-
-                            <strong>100+</strong>
-
-                            <span>
-
-                                Quality Products
-
-                            </span>
-
-                        </div>
-
-
-                        <div class="stat-item">
-
-                            <strong>7</strong>
-
-                            <span>
-
-                                Main Categories
-
-                            </span>
-
-                        </div>
-
-
-                        <div class="stat-item">
-
-                            <strong>100%</strong>
-
-                            <span>
-
-                                Customer Focus
-
-                            </span>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-
-                <!-- HOME FEATURE AREA -->
-
-                <div class="home-feature-area">
-
-
-                    <div class="home-feature-card">
-
-                        <i class="fa-solid fa-bag-shopping"></i>
-
-                        <h2>
-
-                            SK BRAND
-
-                        </h2>
-
-                        <p>
-
-                            Quality Products
-
-                        </p>
-
-                    </div>
-
-
-                    <div class="home-floating-card home-card-one">
-
-                        <i class="fa-solid fa-star"></i>
-
-                        <span>
-
-                            Best Quality
-
-                        </span>
-
-                    </div>
-
-
-                    <div class="home-floating-card home-card-two">
-
-                        <i class="fa-solid fa-tags"></i>
-
-                        <span>
-
-                            Amazing Deals
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-                         FEATURED CATEGORIES
-        ================================================== -->
-
-        <section class="categories-section">
-
-            <div class="container">
-
-
-                <div class="section-heading">
-
-                    <span>
-
-                        EXPLORE CATEGORIES
-
-                    </span>
-
-
-                    <h2>
-
-                        Shop By Category
-
-                    </h2>
-
-
-                    <p>
-
-                        Explore our popular product categories.
-
-                    </p>
-
-                </div>
-
-
-                <div class="category-grid">
-
-
-                    <!-- MOBILE PHONES -->
-
-                    <a href="#products"
-                        class="category-card category-mobile-phone"
-                        data-category="Mobile Phone">
-
-                        <div class="category-icon">
-
-                            <i class="fa-solid fa-mobile-screen-button"></i>
-
-                        </div>
-
-                        <h3>
-
-                            Mobile Phones
-
-                        </h3>
-
-                        <p>
-
-                            Latest mobile phones
-
-                        </p>
-
-                    </a>
-
-
-                    <!-- MOBILE COVERS -->
-
-                    <a href="#products"
-                        class="category-card category-mobile-cover"
-                        data-category="Mobile Cover">
-
-                        <div class="category-icon">
-
-                            <i class="fa-solid fa-mobile-screen"></i>
-
-                        </div>
-
-                        <h3>
-
-                            Mobile Covers
-
-                        </h3>
-
-                        <p>
-
-                            Stylish protection
-
-                        </p>
-
-                    </a>
-
-
-                    <!-- BLUETOOTH SPEAKERS -->
-
-                    <a href="#products"
-                        class="category-card category-speaker"
-                        data-category="Bluetooth Speaker">
-
-                        <div class="category-icon">
-
-                            <i class="fa-solid fa-volume-high"></i>
-
-                        </div>
-
-                        <h3>
-
-                            Bluetooth Speakers
-
-                        </h3>
-
-                        <p>
-
-                            Powerful sound
-
-                        </p>
-
-                    </a>
-
-
-                    <!-- EARBUDS -->
-
-                    <a href="#products"
-                        class="category-card category-earbuds"
-                        data-category="Earbuds">
-
-                        <div class="category-icon">
-
-                            <i class="fa-solid fa-headphones"></i>
-
-                        </div>
-
-                        <h3>
-
-                            Earbuds
-
-                        </h3>
-
-                        <p>
-
-                            Wireless audio
-
-                        </p>
-
-                    </a>
-
-
-                    <!-- HEADPHONES -->
-
-                    <a href="#products"
-                        class="category-card category-headphones"
-                        data-category="Headphones">
-
-                        <div class="category-icon">
-
-                            <i class="fa-solid fa-headphones-simple"></i>
-
-                        </div>
-
-                        <h3>
-
-                            Headphones
-
-                        </h3>
-
-                        <p>
-
-                            Premium sound
-
-                        </p>
-
-                    </a>
-
-
-                    <!-- POWER BANKS -->
-
-                    <a href="#products"
-                        class="category-card category-power-bank"
-                        data-category="Power Bank">
-
-                        <div class="category-icon">
-
-                            <i class="fa-solid fa-battery-full"></i>
-
-                        </div>
-
-                        <h3>
-
-                            Power Banks
-
-                        </h3>
-
-                        <p>
-
-                            Reliable power
-
-                        </p>
-
-                    </a>
-
-
-                    <!-- SMART WATCHES -->
-
-                    <a href="#products"
-                        class="category-card category-smart-watch"
-                        data-category="Smart Watch">
-
-                        <div class="category-icon">
-
-                            <i class="fa-solid fa-clock"></i>
-
-                        </div>
-
-                        <h3>
-
-                            Smart Watches
-
-                        </h3>
-
-                        <p>
-
-                            Smart lifestyle
-
-                        </p>
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-                            ABOUT SECTION
-        ================================================== -->
-
-        <section class="about-section" id="about">
-
-            <div class="container about-container">
-
-
-                <div class="about-visual">
-
-                    <div class="about-brand-box">
-
-                        <span>
-
-                            SK
-
-                        </span>
-
-                        <strong>
-
-                            BRAND
-
-                        </strong>
-
-                    </div>
-
-                </div>
-
-
-                <div class="about-content">
-
-
-                    <span class="section-label">
-
-                        ABOUT SK BRAND
-
-                    </span>
-
-
-                    <h2>
-
-                        Quality Products.
-
-                        <span>
-
-                            Better Choices.
-
-                        </span>
-
-                    </h2>
-
-
-                    <p>
-
-                        SK Brand is an online platform created to help
-                        customers discover useful, stylish and quality
-                        products in one place.
-
-                    </p>
-
-
-                    <p>
-
-                        Our product categories include mobile phones,
-                        mobile covers, Bluetooth speakers, earbuds,
-                        headphones, power banks and smart watches.
-
-                    </p>
-
-
-                    <div class="about-features">
-
-
-                        <div class="about-feature">
-
-                            <i class="fa-solid fa-circle-check"></i>
-
-                            <span>
-
-                                Quality Products
-
-                            </span>
-
-                        </div>
-
-
-                        <div class="about-feature">
-
-                            <i class="fa-solid fa-circle-check"></i>
-
-                            <span>
-
-                                Easy Product Discovery
-
-                            </span>
-
-                        </div>
-
-
-                        <div class="about-feature">
-
-                            <i class="fa-solid fa-circle-check"></i>
-
-                            <span>
-
-                                Customer Focused Service
-
-                            </span>
-
-                        </div>
-
-
-                        <div class="about-feature">
-
-                            <i class="fa-solid fa-circle-check"></i>
-
-                            <span>
-
-                                Simple Online Shopping
-
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-                            THEME SECTION
-        ================================================== -->
-
-        <section class="theme-section" id="theme">
-
-            <div class="container">
-
-
-                <div class="section-heading">
-
-                    <span>
-
-                        DISCOVER OUR THEMES
-
-                    </span>
-
-
-                    <h2>
-
-                        Explore Product Themes
-
-                    </h2>
-
-
-                    <p>
-
-                        Discover different product categories
-                        with unique styles.
-
-                    </p>
-
-                </div>
-
-
-                <div class="theme-grid">
-
-
-                    <div class="theme-card theme-electronics">
-
-                        <div class="theme-card-icon">
-
-                            <i class="fa-solid fa-bolt"></i>
-
-                        </div>
-
-                        <h3>
-
-                            Electronics
-
-                        </h3>
-
-                        <p>
-
-                            Explore useful electronic products.
-
-                        </p>
-
-                        <a href="#products">
-
-                            Explore
-
-                            <i class="fa-solid fa-arrow-right"></i>
-
-                        </a>
-
-                    </div>
-
-
-                    <div class="theme-card theme-mobile">
-
-                        <div class="theme-card-icon">
-
-                            <i class="fa-solid fa-mobile-screen"></i>
-
-                        </div>
-
-                        <h3>
-
-                            Mobile Collection
-
-                        </h3>
-
-                        <p>
-
-                            Find mobile phones and covers.
-
-                        </p>
-
-                        <a href="#products">
-
-                            Explore
-
-                            <i class="fa-solid fa-arrow-right"></i>
-
-                        </a>
-
-                    </div>
-
-
-                    <div class="theme-card theme-audio">
-
-                        <div class="theme-card-icon">
-
-                            <i class="fa-solid fa-headphones"></i>
-
-                        </div>
-
-                        <h3>
-
-                            Audio Collection
-
-                        </h3>
-
-                        <p>
-
-                            Earbuds, headphones and speakers.
-
-                        </p>
-
-                        <a href="#products">
-
-                            Explore
-
-                            <i class="fa-solid fa-arrow-right"></i>
-
-                        </a>
-
-                    </div>
-
-
-                    <div class="theme-card theme-smart">
-
-                        <div class="theme-card-icon">
-
-                            <i class="fa-solid fa-clock"></i>
-
-                        </div>
-
-                        <h3>
-
-                            Smart Lifestyle
-
-                        </h3>
-
-                        <p>
-
-                            Smart watches and modern products.
-
-                        </p>
-
-                        <a href="#products">
-
-                            Explore
-
-                            <i class="fa-solid fa-arrow-right"></i>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-                        PRODUCTS SECTION
-        ================================================== -->
-
-        <section class="products-section" id="products">
-
-            <div class="container">
-
-
-                <div class="section-heading">
-
-                    <span>
-
-                        OUR PRODUCTS
-
-                    </span>
-
-
-                    <h2>
-
-                        Featured Products
-
-                    </h2>
-
-
-                    <p>
-
-                        Explore our collection of useful and quality products.
-
-                    </p>
-
-                </div>
-
-
-                <!-- PRODUCT FILTER BUTTONS -->
-
-                <div class="product-filter-buttons">
-
-
-                    <button
-                        class="filter-button active"
-                        data-filter="all">
-
-                        All Products
-
-                    </button>
-
-
-                    <button
-                        class="filter-button"
-                        data-filter="Mobile Phone">
-
-                        Mobile Phones
-
-                    </button>
-
-
-                    <button
-                        class="filter-button"
-                        data-filter="Mobile Cover">
-
-                        Mobile Covers
-
-                    </button>
-
-
-                    <button
-                        class="filter-button"
-                        data-filter="Bluetooth Speaker">
-
-                        Bluetooth Speakers
-
-                    </button>
-
-
-                    <button
-                        class="filter-button"
-                        data-filter="Earbuds">
-
-                        Earbuds
-
-                    </button>
-
-
-                    <button
-                        class="filter-button"
-                        data-filter="Headphones">
-
-                        Headphones
-
-                    </button>
-
-
-                    <button
-                        class="filter-button"
-                        data-filter="Power Bank">
-
-                        Power Banks
-
-                    </button>
-
-
-                    <button
-                        class="filter-button"
-                        data-filter="Smart Watch">
-
-                        Smart Watches
-
-                    </button>
-
-                </div>
-
-
-                <!-- PRODUCT GRID -->
-
-                <div class="product-grid" id="productGrid">
-
-
-                    <!-- PRODUCT 1 -->
-
-                    <article
-                        class="product-card"
-                        data-category="Mobile Phone"
-                        data-product-name="Mobile Phone">
-
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/mobile-phone.jpg"
-                                alt="Mobile Phone">
-
-                            <span class="product-badge">
-
-                                FEATURED
-
-                            </span>
-
-                        </div>
-
-
-                        <div class="product-content">
-
-                            <span class="product-category">
-
-                                Mobile Phone
-
-                            </span>
-
-
-                            <h3>
-
-                                Latest Mobile Phone
-
-                            </h3>
-
-
-                            <p>
-
-                                Discover modern mobile phones
-                                with stylish design and useful features.
-
-                            </p>
-
-
-                            <div class="product-rating">
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                            </div>
-
-
-                            <div class="product-bottom">
-
-                                <strong>
-
-                                    Rs. 25,999
-
-                                </strong>
-
-
-                                <a
-                                    href="https://wa.me/923105276184?text=Hello%20SK%20Brand%2C%20I%20am%20interested%20in%20the%20Latest%20Mobile%20Phone."
-                                    class="product-button"
-                                    target="_blank">
-
-                                    Get Deal
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 2 -->
-
-                    <article
-                        class="product-card"
-                        data-category="Mobile Cover"
-                        data-product-name="Mobile Cover">
-
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/mobile-cover.jpg"
-                                alt="Mobile Cover">
-
-                            <span class="product-badge">
-
-                                TRENDING
-
-                            </span>
-
-                        </div>
-
-
-                        <div class="product-content">
-
-                            <span class="product-category">
-
-                                Mobile Cover
-
-                            </span>
-
-
-                            <h3>
-
-                                Premium Mobile Cover
-
-                            </h3>
-
-
-                            <p>
-
-                                Stylish and protective mobile covers
-                                for your daily use.
-
-                            </p>
-
-
-                            <div class="product-rating">
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-regular fa-star"></i>
-
-                            </div>
-
-
-                            <div class="product-bottom">
-
-                                <strong>
-
-                                    Rs. 599
-
-                                </strong>
-
-
-                                <a
-                                    href="https://wa.me/923105276184?text=Hello%20SK%20Brand%2C%20I%20am%20interested%20in%20the%20Premium%20Mobile%20Cover."
-                                    class="product-button"
-                                    target="_blank">
-
-                                    Get Deal
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 3 -->
-
-                    <article
-                        class="product-card"
-                        data-category="Bluetooth Speaker"
-                        data-product-name="Bluetooth Speaker">
-
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/bluetooth-speaker.jpg"
-                                alt="Bluetooth Speaker">
-
-                            <span class="product-badge">
-
-                                POPULAR
-
-                            </span>
-
-                        </div>
-
-
-                        <div class="product-content">
-
-                            <span class="product-category">
-
-                                Bluetooth Speaker
-
-                            </span>
-
-
-                            <h3>
-
-                                Bluetooth Speaker
-
-                            </h3>
-
-
-                            <p>
-
-                                Enjoy powerful sound and
-                                convenient wireless music.
-
-                            </p>
-
-
-                            <div class="product-rating">
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                            </div>
-
-
-                            <div class="product-bottom">
-
-                                <strong>
-
-                                    Rs. 1,799
-
-                                </strong>
-
-
-                                <a
-                                    href="https://wa.me/923105276184?text=Hello%20SK%20Brand%2C%20I%20am%20interested%20in%20the%20Bluetooth%20Speaker."
-                                    class="product-button"
-                                    target="_blank">
-
-                                    Get Deal
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 4 -->
-
-                    <article
-                        class="product-card"
-                        data-category="Earbuds"
-                        data-product-name="Earbuds">
-
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/earbuds.jpg"
-                                alt="Earbuds">
-
-                            <span class="product-badge">
-
-                                NEW
-
-                            </span>
-
-                        </div>
-
-
-                        <div class="product-content">
-
-                            <span class="product-category">
-
-                                Earbuds
-
-                            </span>
-
-
-                            <h3>
-
-                                Wireless Earbuds
-
-                            </h3>
-
-
-                            <p>
-
-                                Enjoy clear sound and
-                                comfortable wireless listening.
-
-                            </p>
-
-
-                            <div class="product-rating">
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-regular fa-star"></i>
-
-                            </div>
-
-
-                            <div class="product-bottom">
-
-                                <strong>
-
-                                    Rs. 1,499
-
-                                </strong>
-
-
-                                <a
-                                    href="https://wa.me/923105276184?text=Hello%20SK%20Brand%2C%20I%20am%20interested%20in%20the%20Wireless%20Earbuds."
-                                    class="product-button"
-                                    target="_blank">
-
-                                    Get Deal
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 5 -->
-
-                    <article
-                        class="product-card"
-                        data-category="Headphones"
-                        data-product-name="Headphones">
-
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/headphones.jpg"
-                                alt="Headphones">
-
-                            <span class="product-badge">
-
-                                BEST SELLER
-
-                            </span>
-
-                        </div>
-
-
-                        <div class="product-content">
-
-                            <span class="product-category">
-
-                                Headphones
-
-                            </span>
-
-
-                            <h3>
-
-                                Premium Headphones
-
-                            </h3>
-
-
-                            <p>
-
-                                Comfortable headphones with
-                                quality audio performance.
-
-                            </p>
-
-
-                            <div class="product-rating">
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                            </div>
-
-
-                            <div class="product-bottom">
-
-                                <strong>
-
-                                    Rs. 2,499
-
-                                </strong>
-
-
-                                <a
-                                    href="https://wa.me/923105276184?text=Hello%20SK%20Brand%2C%20I%20am%20interested%20in%20the%20Premium%20Headphones."
-                                    class="product-button"
-                                    target="_blank">
-
-                                    Get Deal
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 6 -->
-
-                    <article
-                        class="product-card"
-                        data-category="Power Bank"
-                        data-product-name="Power Bank">
-
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/power-bank.jpg"
-                                alt="Power Bank">
-
-                            <span class="product-badge">
-
-                                DEAL
-
-                            </span>
-
-                        </div>
-
-
-                        <div class="product-content">
-
-                            <span class="product-category">
-
-                                Power Bank
-
-                            </span>
-
-
-                            <h3>
-
-                                Fast Charging Power Bank
-
-                            </h3>
-
-
-                            <p>
-
-                                Reliable portable power
-                                for your everyday needs.
-
-                            </p>
-
-
-                            <div class="product-rating">
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-regular fa-star"></i>
-
-                            </div>
-
-
-                            <div class="product-bottom">
-
-                                <strong>
-
-                                    Rs. 1,999
-
-                                </strong>
-
-
-                                <a
-                                    href="https://wa.me/923105276184?text=Hello%20SK%20Brand%2C%20I%20am%20interested%20in%20the%20Fast%20Charging%20Power%20Bank."
-                                    class="product-button"
-                                    target="_blank">
-
-                                    Get Deal
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCT 7 -->
-
-                    <article
-                        class="product-card"
-                        data-category="Smart Watch"
-                        data-product-name="Smart Watch">
-
-
-                        <div class="product-image">
-
-                            <img
-                                src="images/smart-watch.jpg"
-                                alt="Smart Watch">
-
-                            <span class="product-badge">
-
-                                SMART
-
-                            </span>
-
-                        </div>
-
-
-                        <div class="product-content">
-
-                            <span class="product-category">
-
-                                Smart Watch
-
-                            </span>
-
-
-                            <h3>
-
-                                Smart Watch
-
-                            </h3>
-
-
-                            <p>
-
-                                Modern smart watch for
-                                a smarter everyday lifestyle.
-
-                            </p>
-
-
-                            <div class="product-rating">
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <i class="fa-solid fa-star"></i>
-
-                            </div>
-
-
-                            <div class="product-bottom">
-
-                                <strong>
-
-                                    Rs. 2,499
-
-                                </strong>
-
-
-                                <a
-                                    href="https://wa.me/923105276184?text=Hello%20SK%20Brand%2C%20I%20am%20interested%20in%20the%20Smart%20Watch."
-                                    class="product-button"
-                                    target="_blank">
-
-                                    Get Deal
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-
-                <!-- NO SEARCH RESULTS MESSAGE -->
-
-                <div
-                    class="no-products-message"
-                    id="noProductsMessage">
-
-                    <i class="fa-solid fa-box-open"></i>
-
-                    <h3>
-
-                        No Products Found
-
-                    </h3>
-
-                    <p>
-
-                        Please try another search.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-                         WHY CHOOSE US
-        ================================================== -->
-
-        <section class="why-us-section">
-
-            <div class="container">
-
-
-                <div class="section-heading">
-
-                    <span>
-
-                        WHY SK BRAND
-
-                    </span>
-
-
-                    <h2>
-
-                        Why Choose Us?
-
-                    </h2>
-
-                </div>
-
-
-                <div class="why-us-grid">
-
-
-                    <div class="why-us-card">
-
-                        <i class="fa-solid fa-shield-halved"></i>
-
-                        <h3>
-
-                            Quality Focus
-
-                        </h3>
-
-                        <p>
-
-                            We focus on useful and quality products.
-
-                        </p>
-
-                    </div>
-
-
-                    <div class="why-us-card">
-
-                        <i class="fa-solid fa-tags"></i>
-
-                        <h3>
-
-                            Best Deals
-
-                        </h3>
-
-                        <p>
-
-                            Discover attractive deals and products.
-
-                        </p>
-
-                    </div>
-
-
-                    <div class="why-us-card">
-
-                        <i class="fa-solid fa-magnifying-glass"></i>
-
-                        <h3>
-
-                            Easy Search
-
-                        </h3>
-
-                        <p>
-
-                            Find your desired product quickly.
-
-                        </p>
-
-                    </div>
-
-
-                    <div class="why-us-card">
-
-                        <i class="fa-brands fa-whatsapp"></i>
-
-                        <h3>
-
-                            Easy Contact
-
-                        </h3>
-
-                        <p>
-
-                            Contact us easily through WhatsApp.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-                         CALL TO ACTION
-        ================================================== -->
-
-        <section class="cta-section">
-
-            <div class="container cta-container">
-
-
-                <div>
-
-                    <span>
-
-                        FIND YOUR NEXT FAVORITE PRODUCT
-
-                    </span>
-
-
-                    <h2>
-
-                        Explore SK Brand Today
-
-                    </h2>
-
-                </div>
-
-
-                <a href="#products" class="cta-button">
-
-                    Explore Products
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-                         PRIVACY POLICY
-        ================================================== -->
-
-        <section class="privacy-section" id="privacy">
-
-            <div class="container privacy-container">
-
-
-                <div class="section-heading">
-
-                    <span>
-
-                        YOUR PRIVACY MATTERS
-
-                    </span>
-
-
-                    <h2>
-
-                        Privacy Policy
-
-                    </h2>
-
-                </div>
-
-
-                <div class="privacy-content">
-
-
-                    <div class="privacy-block">
-
-                        <i class="fa-solid fa-user-shield"></i>
-
-                        <div>
-
-                            <h3>
-
-                                Privacy Protection
-
-                            </h3>
-
-                            <p>
-
-                                We respect the privacy of our visitors
-                                and users.
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="privacy-block">
-
-                        <i class="fa-solid fa-circle-info"></i>
-
-                        <div>
-
-                            <h3>
-
-                                Website Information
-
-                            </h3>
-
-                            <p>
-
-                                Information displayed on this website
-                                is provided for product discovery and
-                                communication purposes.
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="privacy-block">
-
-                        <i class="fa-solid fa-link"></i>
-
-                        <div>
-
-                            <h3>
-
-                                External Links
-
-                            </h3>
-
-                            <p>
-
-                                Some product or communication links may
-                                redirect users to external platforms.
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="privacy-block">
-
-                        <i class="fa-solid fa-lock"></i>
-
-                        <div>
-
-                            <h3>
-
-                                Secure Communication
-
-                            </h3>
-
-                            <p>
-
-                                Users can contact SK Brand through the
-                                available communication channels.
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-                          CONTACT SECTION
-        ================================================== -->
-
-        <section class="contact-section" id="contact">
-
-            <div class="container">
-
-
-                <div class="section-heading">
-
-                    <span>
-
-                        GET IN TOUCH
-
-                    </span>
-
-
-                    <h2>
-
-                        Contact SK Brand
-
-                    </h2>
-
-
-                    <p>
-
-                        Have a question? Contact us through WhatsApp.
-
-                    </p>
-
-                </div>
-
-
-                <div class="contact-grid">
-
-
-                    <!-- WHATSAPP -->
-
-                    <div class="contact-card">
-
-                        <div class="contact-icon">
-
-                            <i class="fa-brands fa-whatsapp"></i>
-
-                        </div>
-
-
-                        <h3>
-
-                            WhatsApp
-
-                        </h3>
-
-
-                        <p>
-
-                            03105276184
-
-                        </p>
-
-
-                        <a
-                            href="https://wa.me/923105276184"
-                            target="_blank"
-                            class="contact-button">
-
-                            Chat on WhatsApp
-
-                        </a>
-
-                    </div>
-
-
-                    <!-- EMAIL -->
-
-                    <div class="contact-card">
-
-                        <div class="contact-icon">
-
-                            <i class="fa-solid fa-envelope"></i>
-
-                        </div>
-
-
-                        <h3>
-
-                            Email
-
-                        </h3>
-
-
-                        <p>
-
-                            Contact us through email.
-
-                        </p>
-
-
-                        <a
-                            href="mailto:info@skbrand.com"
-                            class="contact-button">
-
-                            Send Email
-
-                        </a>
-
-                    </div>
-
-
-                    <!-- SOCIAL -->
-
-                    <div class="contact-card">
-
-                        <div class="contact-icon">
-
-                            <i class="fa-solid fa-share-nodes"></i>
-
-                        </div>
-
-
-                        <h3>
-
-                            Social Media
-
-                        </h3>
-
-
-                        <p>
-
-                            Follow SK Brand online.
-
-                        </p>
-
-
-                        <a
-                            href="#"
-                            class="contact-button">
-
-                            Follow Us
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- =====================================================
-                             FOOTER
-    ====================================================== -->
-
-    <footer class="site-footer">
-
-        <div class="container footer-container">
-
-
-            <!-- FOOTER BRAND -->
-
-            <div class="footer-brand">
-
-
-                <a href="#home" class="footer-brand-name">
-
-                    SK BRAND
-
-                </a>
-
-
-                <p>
-
-                    Quality products, better choices and
-                    amazing deals in one place.
-
-                </p>
-
-
-                <div class="social-links">
-
-
-                    <a href="#" aria-label="Facebook">
-
-                        <i class="fa-brands fa-facebook-f"></i>
-
-                    </a>
-
-
-                    <a href="#" aria-label="Instagram">
-
-                        <i class="fa-brands fa-instagram"></i>
-
-                    </a>
-
-
-                    <a href="#" aria-label="TikTok">
-
-                        <i class="fa-brands fa-tiktok"></i>
-
-                    </a>
-
-
-                    <a
-                        href="https://wa.me/923105276184"
-                        target="_blank"
-                        aria-label="WhatsApp">
-
-                        <i class="fa-brands fa-whatsapp"></i>
-
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- FOOTER LINKS -->
-
-            <div class="footer-links-column">
-
-                <h3>
-
-                    Quick Links
-
-                </h3>
-
-
-                <a href="#home">
-
-                    Home
-
-                </a>
-
-
-                <a href="#about">
-
-                    About Us
-
-                </a>
-
-
-                <a href="#theme">
-
-                    Theme
-
-                </a>
-
-
-                <a href="#products">
-
-                    Products
-
-                </a>
-
-            </div>
-
-
-            <!-- FOOTER INFORMATION -->
-
-            <div class="footer-links-column">
-
-                <h3>
-
-                    Information
-
-                </h3>
-
-
-                <a href="#privacy">
-
-                    Privacy Policy
-
-                </a>
-
-
-                <a href="#contact">
-
-                    Contact Us
-
-                </a>
-
-
-                <a href="#products">
-
-                    Featured Products
-
-                </a>
-
-            </div>
-
-
-            <!-- FOOTER CONTACT -->
-
-            <div class="footer-contact-column">
-
-                <h3>
-
-                    Contact
-
-                </h3>
-
-
-                <p>
-
-                    <i class="fa-brands fa-whatsapp"></i>
-
-                    03105276184
-
-                </p>
-
-
-                <p>
-
-                    <i class="fa-solid fa-envelope"></i>
-
-                    info@skbrand.com
-
-                </p>
-
-            </div>
-
+        <div class="product-card">
+            <img src="images/no-image.png" alt="Earbuds">
+            <h3>Earbuds</h3>
+            <p>Latest Collection</p>
+            <a href="products/earbuds.html" class="buy-btn">Explore</a>
         </div>
 
-
-        <!-- COPYRIGHT -->
-
-        <div class="copyright">
-
-            <div class="container">
-
-                <p>
-
-                    © 2026 SK Brand. All Rights Reserved.
-
-                </p>
-
-            </div>
-
+        <div class="product-card">
+            <img src="images/no-image.png" alt="Headphones">
+            <h3>Headphones</h3>
+            <p>Top Quality</p>
+            <a href="products/headphones.html" class="buy-btn">Explore</a>
         </div>
 
-    </footer>
+        <div class="product-card">
+            <img src="images/no-image.png" alt="Bluetooth Speaker">
+            <h3>Bluetooth Speakers</h3>
+            <p>Best Sound</p>
+            <a href="products/bluetooth-speakers.html" class="buy-btn">Explore</a>
+        </div>
 
+    </div>
 
-    <!-- =====================================================
-                       FLOATING WHATSAPP BUTTON
-    ====================================================== -->
+</section>
+<!-- ==========================
+     BEST SELLERS
+========================== -->
 
-    <a
-        href="https://wa.me/923105276184"
-        class="floating-whatsapp"
-        target="_blank"
-        aria-label="Contact SK Brand on WhatsApp">
+<section class="best-sellers" id="deals">
 
-        <i class="fa-brands fa-whatsapp"></i>
+    <h2>Best Sellers</h2>
 
-    </a>
+    <div class="product-grid">
 
+        <div class="product-card">
+            <img src="images/no-image.png" alt="Best Smart Watch">
+            <h3>Premium Smart Watch</h3>
+            <p>Most Popular Product</p>
+            <a href="products/smart-watch.html" class="buy-btn">View Product</a>
+        </div>
 
-    <!-- =====================================================
-                          JAVASCRIPT FILE
-    ====================================================== -->
+        <div class="product-card">
+            <img src="images/no-image.png" alt="Best Earbuds">
+            <h3>Wireless Earbuds</h3>
+            <p>Top Selling Item</p>
+            <a href="products/earbuds.html" class="buy-btn">View Product</a>
+        </div>
 
-    <script src="script.js"></script>
+        <div class="product-card">
+            <img src="images/no-image.png" alt="Power Bank">
+            <h3>Fast Charging Power Bank</h3>
+            <p>Customer Favorite</p>
+            <a href="products/power-banks.html" class="buy-btn">View Product</a>
+        </div>
 
+        <div class="product-card">
+            <img src="images/no-image.png" alt="Computer Mouse">
+            <h3>Wireless Mouse</h3>
+            <p>Best Quality</p>
+            <a href="products/mouse.html" class="buy-btn">View Product</a>
+        </div>
 
+    </div>
+
+</section>
+<!-- FOOTER -->
+ 
+<footer class="footer">
+    <div class="footer-content">
+
+        <h2>SK Brand</h2>
+        <p>Your Trusted Online Shopping platform</p>
+
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+        </div>
+
+        <p>© 2026 SK Brand. All Rights Reserved.</p>
+
+    </div>
+</footer>
+<script src="script.js"></script>
 </body>
-
 </html>

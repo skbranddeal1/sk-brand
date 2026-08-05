@@ -272,6 +272,37 @@ nav ul{
 .logo h1{
     font-size:28px;
 }
+.logo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+}
+
+.logo img{
+    width:60px;
+    height:60px;
+}
+
+nav{
+    width:100%;
+}
+
+.search-box{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-top:15px;
+}
+
+.hero-text h1{
+    font-size:42px;
+}
+
+.hero-text p{
+    font-size:18px;
+    line-height:1.8;
+}
 
 }
 /* ==========================
